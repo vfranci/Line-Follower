@@ -19,15 +19,15 @@ My team - _Powerpuff Girls_:
 - Medium breadboard
 - Wires (M - F, M - M), zip-ties, screws as needed
 
-For the chassis we cut into a foam board after measuring an apropriate distance between the wheels and for the sensor. We improvised "pockets" for the breadboard and battery and we secured the Arduino board and the motors using zip-ties.
+For the chassis we cut into a foam board after measuring an apropriate distance between the wheels. We improvised "pockets" for the breadboard and battery and we secured the Arduino board and the motors using zip-ties. The sensor was placed at the front of the chassis and opposite of the wheels to ensure closeness to the track.
 
 ### Requirements
 
-Minimum requirements for the project were to have the robot finish the line follower track, including the curved lines. To achieve maximum grade, the course had to be finished in under 20 seconds and, upon starting, the sensor had to be calibrated using automatic motor movement.
+Minimum requirements for the project were to have the robot finish the line follower track and not stray from the black line. To achieve maximum grade, the course had to be finished in under 20 seconds and, upon starting, the sensor had to be calibrated using automatic motor movement.
 
 ### Software implementation
 
-At first, we implemented automatic motor movement so that the robot could calibrate its sensor by moving left and right in order to recognize the black line it had to follow. The movement behaviour was determined by using a proportional-integrative-derivative controller. We started with a simple code provided by our teacher in which we had to alter the kp, ki, and kd values to achieve the desired movement. We started by assigning random values to the proportional constant in order to observe the behaviour. Once the robot was able to take the turns without overshooting, we began updating the kd value to smooth the wobble. 
+At first, we implemented automatic motor movement so that the robot could calibrate its sensor by moving left and right in order to recognize the black line it had to follow. The movement behaviour was determined by using a proportional-integrative-derivative controller. We started with a simple code provided by our teacher in which we had to alter the kp, ki, and kd values to achieve the desired movement. We modified the code by assigning random values to the proportional constant in order to observe the behaviour. Once the robot was able to take the turns without overshooting, we began updating the kd value to smooth the wobble. 
 
 The final values were:
 - kp = 4.3;
@@ -41,7 +41,7 @@ Afterwards, we juggled the tresholds for the error and motor speed values.
 Final setup of the robot: 
 ![Robot](https://github.com/vfranci/Line-Follower/assets/115077321/08085af5-6bf5-4b55-920f-c0e0b4081a76)
 
-When presenting our design, the lowest time recorded for completing the track was 18... seconds. 
+When presenting our design, the lowest time recorded for completing the track was 17.871 seconds. 
 
 Performance video: https://youtu.be/dwM-u17O9Z4?si=YvZB7Q0n8osCDkEj 
 
