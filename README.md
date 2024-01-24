@@ -17,9 +17,9 @@ My team - _Powerpuff Girls_:
 - L293D motor driver
 - Two DC motors
 - Medium breadboard
-- Wires (M - F, M - M), zip-ties, screws as needed
+- Wires, zip-ties, screws as needed
 
-For the chassis we cut into a foam board after measuring an apropriate distance between the wheels. We improvised "pockets" for the breadboard and battery and we secured the Arduino board and the motors using zip-ties. The sensor was placed at the front of the chassis and opposite of the wheels to ensure closeness to the track.
+For the chassis we cut into a foam board after measuring an apropriate distance between the wheels. We secured the Arduino board, the battery, the breadboard and the motors using zip-ties. The sensor was placed at the front of the chassis and opposite of the wheels to ensure closeness to the track.
 
 ### Requirements
 
